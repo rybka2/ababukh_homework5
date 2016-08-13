@@ -7,53 +7,57 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
  <body>
+   <header class="bar">
+     <ul>
+       <li><a href="#">Ola! Entrar ou Cadastre-se</a></li>
+       <li><a href="#">Minhas Ofertas</a></li>
+       <li><img src="img/inventicons-29.png" alt="Flag" /></li>
+       <li><a href="#">Ajuda</a></li>
+       <li><a href="#">Contato</a></li>
+       <li><a href="#">Forum</a></li>
+       <li><a href="#">Vender</a></li>
+       <li><a href="#">Meu YouBike</a></li>
+     </ul>
+   </header>
    <div class="wrapper">
-     <header class="bar">
-        <ul>
-         <li><a href="#">Ola! Entrar ou Cadastre-se</a></li>
-         <li><a href="#">Minhas Ofertas</a></li>
-         <li><img src="img/inventicons-29.png"></li>
-         <li><a href="#">Ajuda</a></li>
-         <li><a href="#">Contato</a></li>
-         <li><a href="#">Forum</a></li>
-         <li><a href="#">Vender</a></li>
-         <li><a href="#">Meu YouBike</a></li>
-       </ul>
-     </header>
      <div class="Cadastre">
        <div class="Cadastre-s">
          <h1>Cadastre-se</h1>
        </div>
        <div class="fb-btn">
-         <img src="img/layer-3-copy.png">
+         <img src="img/layer-3-copy.png" alt="facebook" />
        </div>
+
        <form action="#">
-         <div class="OU">
-           <p>OU</p>
+         <div class="center">
+           <button type="button" class="facebook"></button>
+         </div>
+         <div class="title">
+           <h2>OU</h2>
          </div>
          <div class="center">
-           <input type="text" name="firstname"/>
+           <input type="text" placeholder="First name" name="firstname" id="firstname"/>
          </div>
          <div class="center">
-           <input type="text" name="lastmane"/>
+           <input type="text" placeholder="Last name" name="lastmane" id="lastmane"/>
          </div>
          <div class="center">
-           <input type="email" name="email"/>
+           <input type="email" placeholder="Email Address" name="email"/>
          </div>
          <div class="center">
-           <input type="password" name="password"/>
+           <input type="password" placeholder="Choose password" name="password" id="password"/>
          </div>
          <div class="center">
-           <input type="password" name="confirm"/>
+           <input type="password" placeholder="Password Confirm" name="confirm" id="confirm"/>
          </div>
-         <div class="center check">
-           <input type="checkbox" id="recivenews"/>
-           <label for="recivenews">Send me Youbike updates and tips</label>
+         <div class="check">
+           <input type="checkbox" name="updates"/><span>Send me Youbike updates and tips</span>
          </div>
          <div class="center">
-           <button type="submit">Create my Account</button>
+           <button type="submit" class="create">Create my Account</button>
          </div>
-         <div class="center agreement">
+         <div class="btn">Create my Account</div>
+         <div class="agreement">
            <p>By clicking the button above, you agree to the Terms of Service
            Xiew our Privacy Policy.</p>
          </div>

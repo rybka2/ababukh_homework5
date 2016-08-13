@@ -1,91 +1,137 @@
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueLt';
+    src: url('../fonts/HelveticaNeueLt.ttf');
+    font-weight: bold;
+}
 body {
     background-image: url('../img/background.png');
     background-repeat: round;
+}
+.bar {
+    width: 1215px;
+    height: 37px;
+    margin: 0 auto;
+    background-color: #063c6e;
+}
+.bar li {
+    float: right;
+    height: 37px;
+    color: #ffffff;
+    list-style: none;
+    padding: 9px 20px 9px 5px;
+    margin: 0 5px 0 5px;
+    text-align: center;
+}
+.bar li:hover {
+    height: 37px;
+    background-color: #4eabda;
+    color: white;
+}
+.bar li:hover>a {
+    height: 37px;
+    background-color: #4eabda;
+    color: white;
+}
+.bar li>a {
+    height: 14px;
+    color: #60b5ed;
+    text-decoration: none;
+    font-family: 'HelveticaNeue', Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
 }
 .wrapper {
     background-image: url('../img/background-copy.png');
     width: 1215px;
     height: 1028px;
     margin: 0 auto;
-}
-.bar {
-    background-color: #063c6e;
-    width: 1215px;
-    height: 36px;
-}
-.bar li {
-    float: right;
-    color: #ffffff;
-    list-style: none;
-    margin: 9px 30px 9px 1px;
-}
-.bar li a{
-    height: 14px;
-    font-family: Tahoma, monospace;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 14px;
-    color: #60b5ed;
-    text-decoration: none;
+    position: relative;
 }
 .Cadastre {
-    position: relative;
+    position: absolute;
     width: 560px;
     height: 613px;
     background-color: rgba(16,16,16, 0.63);
-    /*margin: 0 auto;*/
     margin-top: 213px;
     margin-left: 351px;
 }
-.Cadastre-s {
-    width: 125px;
-    height: 20px;
-    color: white;
-    text-align: center;
-    font-family: Tahoma, monospace;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 16px;
-    border-bottom: 2px solid white;
-}
 .fb-btn {
     position: absolute;
-    left:144px;
+    left:142px;
     top: 100px;
     z-index: 1;
 }
-.OU {
+.Cadastre-s {
+    width: 560px;
+    height: 62px;
+    color: white;
+    text-align: center;
+    font-family: 'HelveticaNeueLt', Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 16px;
+}
+h1 {
+    padding-right: 10px;
+    padding-left: 1px;
+    padding-top: 23px;
+    border-bottom: 2px solid white;
+    font-weight: normal;
+    padding-bottom: 23px;
+}
+
+.title {
     position: absolute;
-    left: 273px;
-    top: 165px;
-    width: 19px;
-    height: 12px;
+    left:143px;
+    top: 159px;
+    display: flex;
+    align-content: stretch;
+    align-items: center;
     color: #999;
-    font-family: Tahoma,monospace;;
+    font-family: 'HelveticaNeueLt', Tahoma, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+}
+.title:after, .title:before {
+    content: '';
+    display: block;
+    height:2px;
+    width: 124px;
+    background: #000;
+}
+.title h2 {
+    white-space: nowrap;
+    padding: 5px;
 }
 .center {
     width: 276px;
     height: 35px;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    color: #ccc;
+    font-family: 'HelveticaNeueLt', Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
 }
 .center input, button {
     width: 276px;
     height: 35px;
 }
-.center button {
-    position: absolute;
-    left: 208px;
+
+.facebook {
+    left:142px;
     top: 100px;
-    margin-top: 410px;
-    width: 151px;
-    height: 37px;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(255, 255, 255, 0.3) 100%);
-    border: 1px solid #e6816;
+    opacity: 0.1;
+    position: absolute;
     z-index: 2;
 }
 .center input {
@@ -95,39 +141,65 @@ body {
     border-style: none;
 }
 .center input:first-child {
-    margin-top: 30px;
+    margin-top: 67px;
 }
-.center input:active {
+.center input:focus {
     width: 276px;
     height: 35px;
     background-image: linear-gradient(to top, #1b5288 0%, #1b5288 100%);
     box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 1px 0 #4b4b4b;
 }
 .check {
-    height: 14px;
-    margin-top: 23px;
+    height: 13px;
+    margin-top: 95px;
+    margin-left: 149px;
 }
-
 .check input {
-    width: 20px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
     background-color: #fff;
 }
-
-.check label {
+span {
     width: 214px;
     height: 14px;
     color: #ccc;
-    font-family: Tahoma,monospace;;
+    font-family: 'HelveticaNeueLt', Tahoma, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+    padding-left: 5px;
+}
+.create{
+    position: absolute;
+    left: 208px;
+    top: 511px;
+    /*opacity: 0.1;*/
+    width: 151px;
+    height: 37px;
+    z-index: 2;
+}
+.btn{
+    position: absolute;
+    left: 208px;
+    top: 100px;
+    margin-top: 410px;
+    width: 151px;
+    height: 37px;
+    color: white;
+    text-align: center;
+    line-height: 34px;
+    background-image: url('img/button-copy.png');
+    z-index: 1;
 }
 .agreement {
     width: 309px;
     height: 28px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-left: 119px;
+    text-align: center;
     color: #ccc;
-    font-family: Tahoma, monospace;
+    font-family: 'HelveticaNeueLt', Tahoma, sans-serif;
     font-size: 11px;
     font-weight: 400;
     line-height: 16px;
