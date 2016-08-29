@@ -10,11 +10,6 @@
     font-weight: bold;
 }
 
-/*body {
-	background: url('../img/background.png');
-	background-repeat: round;
-}*/
-
 .bar {
     width: 1215px;
     height: 37px;
@@ -25,8 +20,7 @@
 .bar li {
     float: right;
     height: 37px;
-    padding: 9px 20px 0px 5px;
-    margin: 0 5px 0 5px;
+    margin: 0 4px 0 5px;
     color: #ffffff;
     list-style: none;
     text-align: center;
@@ -44,15 +38,17 @@
     color: white;
 }
 
-.bar li>a {
-    display: inline-block;
-    text-align: center;
+a {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    padding: 0 13px;
     color: #60b5ed;
     text-decoration: none;
     font-family: 'HelveticaNeue', Tahoma, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 37px;
 }
 
 .bar .link {
@@ -65,6 +61,7 @@
 }
 
 .b-img {
+    line-height: 50px;
     border-left: 1px solid white;
 }
 
@@ -114,7 +111,7 @@ h1 {
 
 .title {
     position: absolute;
-    left:143px;
+    left:146px;
     top: 159px;
     display: flex;
     align-content: stretch;
@@ -130,7 +127,7 @@ h1 {
     content: '';
     display: block;
     height:2px;
-    width: 124px;
+    width: 121px;
     background: #000;
 }
 
@@ -161,6 +158,7 @@ h1 {
 }
 
 .fb-btn {
+    margin-left: 65px;
     margin-top: 39px;
 }
 
@@ -175,21 +173,18 @@ h1 {
     z-index: 1;
 }
 
-.btn p {
-    display: block;
-    color: white;
-    text-align: center;
-    line-height: 36px;
-}
-
 .create {
     position: absolute;
     left: 208px;
     top: 496px;
     width: 151px;
     height: 34px;
-    opacity: 0;
-    z-index: 3;
+    background-image: -webkit-linear-gradient(top, #4EABDA 20%, #2E7BC4 70%);
+    border: 1px solid #4EABDA;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    line-height: 16px;
 }
 
 .center input[placeholder] {
@@ -210,7 +205,6 @@ h1 {
 }
 
 .center input:focus {
-    width: 275px;
     height: 35px;
     background-image: linear-gradient(to top, #1b5288 0%, #1b5288 100%);
     box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 1px 0 #4b4b4b;
