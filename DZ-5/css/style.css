@@ -10,8 +10,23 @@
     font-weight: bold;
 }
 
+body {
+    background: url("../img/background-copy.png");
+    background-position: top center;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+    background-repeat: no-repeat;
+		margin: 0;
+}
+
 .bar {
-    width: 1215px;
+    width: 100%;
     height: 37px;
     margin: 0 auto;
     background-color: #085394;
@@ -73,7 +88,6 @@ a {
 }
 
 .wrapper {
-    background-image: url('../img/background-copy.png');
     width: 1215px;
     height: 1028px;
     margin: 0 auto;
@@ -158,19 +172,48 @@ h1 {
 }
 
 .fb-btn {
-    margin-left: 65px;
-    margin-top: 39px;
+    display: inline-block;
+    white-space: nowrap;
+    background: rgb(63, 87, 147);
+    background: -moz-linear-gradient(top, rgba(63, 87, 147, 1) 0%, rgba(49, 67, 115, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(63, 87, 147, 1) 0%, rgba(49, 67, 115, 1) 100%);
+    background: linear-gradient(to bottom, rgba(63, 87, 147, 1) 0%, rgba(49, 67, 115, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3f5793', endColorstr='#314373', GradientType=0);
+    border: 1px solid rgba(9, 12, 21, 0.36);
+    padding: 0 54px 0 0;
+    margin: 34px 0 0 145px;
+    font: 600 14px/35px Tahoma;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 0 0 rgba(8, 2, 80, 0.81);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 1px 0 0 rgba(8, 2, 80, 0.81) inset, 1px 0 0 rgba(8, 2, 80, 0.81);
+    -webkit-box-shadow: 1px 0 0 rgba(8, 2, 80, 0.81) inset, 1px 0 0 rgba(8, 2, 80, 0.81);
+    box-shadow: 1px 0 0 rgba(8, 2, 80, 0.81) inset, 1px 0 0 rgba(8, 2, 80, 0.81);
 }
 
-.btn {
-    position: absolute;
-    left: 208px;
-    bottom: 65px;
-    margin-top: 410px;
-    width: 151px;
-    height: 37px;
-    background-image: url('../img/button-copy.png');
-    z-index: 1;
+.fb-btn:before {
+    background: #ccc;
+    background: rgba(0, 0, 0, .1);
+    float: left;
+    width: 7px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 1px 37px 0 0;
+    padding: 0 12px;
+    -moz-box-shadow: 1px 0 0 rgba(8, 2, 80, 0.81), 1px 0 0 rgba(8, 2, 80, 0.81);
+    -webkit-box-shadow: 1px 0 0 rgba(8, 2, 80, 0.81), 1px 0 0 rgba(8, 2, 80, 0.81);
+    box-shadow: 1px 0 0 rgba(8, 2, 80, 0.81), 1px 0 0 rgba(8, 2, 80, 0.81);
+    -moz-border-radius: .15em 0 0 .15em;
+    -webkit-border-radius: .15em 0 0 .15em;
+    border-radius: .15em 0 0 .15em;
+}
+
+.add:before {
+    content: '\66';
 }
 
 .create {
